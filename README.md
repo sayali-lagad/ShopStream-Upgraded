@@ -144,8 +144,8 @@ This happens when the frontend is calling the wrong backend port. If you run the
 API on a port other than 5000 (this zip is already pre-configured for **5001**),
 make sure all three of these agree:
 - `backend/.env` → `PORT=5001`
-- `frontend/vite.config.js` → both proxy `target` values → `http://localhost:5001`
-- `frontend/.env` → `VITE_API_URL=http://localhost:5001/api`
+- `frontend/vite.config.js` → both proxy `target` values → `http://https://shopstream-upgraded.onrender.com`
+- `frontend/.env` → `VITE_API_URL=http://https://shopstream-upgraded.onrender.com/api`
 
 Then restart **both** `npm run dev` processes (Vite doesn't always pick up `.env`
 changes without a restart). Open the browser console / Network tab — a `net::ERR_CONNECTION_REFUSED`

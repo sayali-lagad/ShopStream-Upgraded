@@ -7,11 +7,11 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://https://shopstream-upgraded.onrender.com',
+        target: 'https://shopstream-upgraded.onrender.com',
         changeOrigin: true,
       },
       '/uploads': {
-        target: 'http://https://shopstream-upgraded.onrender.com',
+        target: 'https://shopstream-upgraded.onrender.com',
         changeOrigin: true,
       },
     },
